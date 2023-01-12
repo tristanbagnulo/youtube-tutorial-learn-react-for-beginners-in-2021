@@ -13,7 +13,7 @@ const Counter = () => {
         return () => {
             console.log("The component was unmounted.");
         }
-    });
+    }, [count]);
 
     return (
         <div>
