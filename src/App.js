@@ -1,16 +1,23 @@
 import './App.css';
+import Counter from "./Components/Counter"
+import TodoList from "./Components/TodoList"
+import React, {useState, useEffect} from "react";
 
 function App() {
+  const [showCounter, setShowCounter] = useState(false);
+
   return (
     <div className="App">
-      <header className="App-header">
+        <h1>Lesson 9 - UseEffect & UseEffect with API Requests</h1>
 
-        {/* TODO - WHEN NEW BRANCH CREATED Remove below 3 headers. */}
-        <h1>Main Branch</h1>
-        <h2><u>Make new branches from this branch</u></h2>
-        <h2>No Functionality - Baseline project only</h2>
+        {/* |LESSON 1| - useEffect different types */}
+        {/* <button onClick={() => setShowCounter(!showCounter)}>
+          {showCounter ? "Hide Counter" : "Show Counter"}
+        </button>
+        {showCounter && <Counter />} */}
 
-      </header>
+        {/* |LESSON 2| - useEffect with API requests */}
+        <TodoList />
     </div>
   );
 }
