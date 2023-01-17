@@ -26,30 +26,41 @@ function App() {
   // See a StackOverflow discussion about that...
   // https://stackoverflow.com/questions/70491774/usenavigate-may-be-used-only-in-the-context-of-a-router-component
   return (
-    <Router>
-      {/* ^^ Highest level components are `BrowserRouter` 
-      called `Router` here. */}
-      <RouterComponent/>
-      <nav>
-            {/* The below 3 are Link implementations are are 
-            very different from the `useNavigator` ones used in the
-            button examples in RouterComponent.js */}
-            <Link to="/"> Home </Link> 
-            <a>|</a>
-            <Link to="/about"> About </Link> 
-            <a>|</a><br></br>
-            <Link to="/profile"> Profile </Link><a> -- requires "/username"</a>
-          </nav>
-          <Routes>
-            <Route path="/" element={<Home/>}/>
-            <Route path="/about" element={<About/>}/>
-            {/* This route accepts an additional parameter
-            `username` */}
-            <Route path="/profile/:username" element={<Profile/>}/>
-            {/* The last route should be the error page. */}
-            <Route path="*" element={<ErrorPage/>}/>
-          </Routes>
-    </Router>
+    <div>
+      <Router>
+        {/* ^^ Highest level components are `BrowserRouter` 
+        called `Router` here. */}
+        <RouterComponent/>
+        <nav>
+          {/* The below 3 are Link implementations are are 
+          very different from the `useNavigator` ones used in the
+          button examples in RouterComponent.js */}
+          <Link to="/"> Home </Link> 
+          <a>|</a>
+          <Link to="/about"> About </Link> 
+          <a>|</a><br></br>
+          <Link to="/profile"> Profile </Link><a> -- requires "/username"</a>
+        </nav>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/about" element={<About/>}/>
+          {/* This route accepts an additional parameter
+          `username` */}
+          <Route path="/profile/:username" element={<Profile/>}/>
+          {/* The last route should be the error page. */}
+          <Route path="*" element={<ErrorPage/>}/>
+        </Routes>
+      </Router>
+      {/* The elements outside of the router will exist independently
+      of the pages/components within the router. Very snazzy to know.
+      This would be the place that you place a brand banner or a site
+      navigation section like a complete item list of all links in 
+      a conceptually sensible order. */}
+      <p>
+        This text will remain regardless of the router page
+        selected.
+      </p>
+    </div>
   );
 }
 
