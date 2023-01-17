@@ -6,6 +6,8 @@ import { durationInYears } from "@progress/kendo-date-math";
 import React from 'react';
 
 function App() {
+  /* The below application displays information on a page from
+  an array of objects called `employeeInfo`. */
   const employeeInfo = [
     {
       firstName:"Tristan",
@@ -33,6 +35,8 @@ function App() {
             
           );
         })}
+        {/* Quick mapping below. More mapping (looping)
+        done later. */}
         {employeeInfo.map(employee => {
           const {firstName, lastName, age } = employee;
           return (
