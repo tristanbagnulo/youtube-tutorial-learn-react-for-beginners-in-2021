@@ -8,10 +8,11 @@ import ErrorPage from './Components/Pages/ErrorPage';
 import Profile from './Components/Pages/Profile';
 import RouterComponent from './Components/RouterComponent';
 
-  // This Router branch is based on this tutorial which
+  // This lesson is based on a tutorial which
   // is not on the main React tutorial playlist. This is because
-  // this tutorial uses React Router V6.
-  // Link - https://www.youtube.com/watch?v=UjHT_NKR_gU
+  // this tutorial uses React Router V6 and the methods are
+  // different.
+  // Link to the tutorial - https://www.youtube.com/watch?v=UjHT_NKR_gU
 
 function App() {
 
@@ -23,7 +24,7 @@ function App() {
   // I programmed and which contained the `useNavigate` hook
   // I satisfy that requirement. 
 
-  // See a StackOverflow discussion about that...
+  // See the StackOverflow discussion about that requirement...
   // https://stackoverflow.com/questions/70491774/usenavigate-may-be-used-only-in-the-context-of-a-router-component
   return (
     <div>
