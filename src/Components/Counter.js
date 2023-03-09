@@ -1,7 +1,13 @@
 import React, {useState, useEffect } from "react";
-
+import TestComponent from "./TestComponent";
 const Counter = () => {
     const [count, setCount] = useState(0);
+
+    const [data, setData] = useState('');
+
+    const childToParent = (childData) => {
+        setData(childData);
+    }
 
     // TOPIC #2 - |The `useEffect` hook|
     // The `useEffect` hook will run once when
@@ -17,6 +23,8 @@ const Counter = () => {
 
     return (
         <div>
+            {data}
+            <TestComponent childToParent={childToParent}/>
             <h4>Counter</h4>
             <p>Current count: {count}</p>
             <button onClick={() => setCount(count +1)}>Increase Count</button>
