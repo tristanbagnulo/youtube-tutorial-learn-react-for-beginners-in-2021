@@ -1,12 +1,7 @@
 # Foreword by Tristan Bagnulo
 
-I built this project the learn the React frontend framework and decided that whilst building it, I would build my own React fundamentals tutorial out of this repository. So, I have separated the project into multiple branches so that each branch pertains to a different topic or set of topics. I figured that separating the code in this way improves its readability because only the code relevant to the given topic will be in that branch. In this way, the lessons are mutually exclusive and will be less likely to confuse the reader. If you are going through this React tutorial, checkout one branch at a time to view that topic's code and inline code documentation (aka "code comments"). Think of them as separate chapters in a textbook.
+In this lesson I implemented to starter Redux app in React that is outlines in the React-Redux quick start tutorial here... https://react-redux.js.org/tutorials/quick-start. A complete explanation of how each of the components work can be found on that page. I chose to follow this guide instead of the lesson-12 YouTube tutorial because some of the functions used in the tutorial were depricated and so the docs seemed like a better single source of truth.
 
-Further, in aims to extract more useful information and to help you understand how code syntax produces an outcome I sometimes code the same thing in different ways and clearly separate the different implementations of the desired result for the reader to be able to attribute different syntax styles to a given outcome. 
-
-By reflecting on my building of this project I was able to once again appreciate a principle that I had previously believed in and which I had implemented in my learning in the past. The principle is that you learn something very well when you try to teach it to someone else who you assume doesn't know much about it. By writing the code in this repo for someone else to use as their only source on beginner React principles; as clearly as possible and with concise inline documentation, I was able to review and even critique my own knowledge that I had just acquired which then allowed me to identify gaps in my knowledge and therefore, where to focus subsequent re-learning. Consequently, my knowledge of React was improved in conciseness, overall correctness and my rate of recall was faster. 
-
-However, my learning of React, will not be completed by building this tutorial alone. I must afterwards complete multiple React projects which implement the methods and principles that I was exposed to whilst creating this repo. I plan to refer to this repo whilst building these projects.
 
 
 ## Available Scripts
