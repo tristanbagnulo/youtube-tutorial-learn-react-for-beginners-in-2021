@@ -4,7 +4,7 @@ import counterReducer from '../features/counter/counterSlice'
 export default configureStore({
  reducer: {
     //within the store we need to import the reducer function from the counterSlice.
-    //Defining it withi nthe reducer paramter tells the store to use this slice reducer
+    //Defining it within the reducer paramter tells the store to use this slice reducer
     //function to handle all updates to that state.
     counter: counterReducer,
  },

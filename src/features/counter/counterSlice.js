@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 export const counterSlice = createSlice({
-    //named for calling
+    //named for calling as in teh store.js component
     name: 'counter',
     //initial value is 0
     initialState: {

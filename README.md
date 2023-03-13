@@ -2,6 +2,22 @@
 
 In this lesson I implemented to starter Redux app in React that is outlines in the React-Redux quick start tutorial here... https://react-redux.js.org/tutorials/quick-start. A complete explanation of how each of the components work can be found on that page. I chose to follow this guide instead of the lesson-12 YouTube tutorial because some of the functions used in the tutorial were depricated and so the docs seemed like a better single source of truth.
 
+The steps in this lesson were...
+
+SUMMARY
+1. Create a Redux store with configureStore
+    - configureStore accepts a reducer function as a named argument
+    - configureStore automatically sets up the store with good default settings
+2. Provide the Redux store to the React application components
+    - Put a React Redux <Provider> component around your <App />
+    - Pass the Redux store as <Provider store={store}>
+3. Create a Redux "slice" reducer with createSlice
+    - Call createSlice with a string name, an initial state, and named reducer functions
+    - Reducer functions may "mutate" the state using Immer
+    - Export the generated slice reducer and action creators
+4. Use the React Redux useSelector/useDispatch hooks in React components
+    - Read data from the store with the useSelector hook
+    - Get the dispatch function with the useDispatch hook, and dispatch actions as needed
 
 
 ## Available Scripts

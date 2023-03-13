@@ -11,6 +11,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
+    {/* store is added to the Provider element. */}
     <Provider store={store}>
       <App />
     </Provider>
